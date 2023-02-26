@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sol {
+  background-image: url(../imagens/sol.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 4rem;
+}
+
+.chuva {
+  background-image: url(../imagens/chuva.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 4rem;
+}
+
+header {
+  background-color: #fff;
+  width: 60%;
+  margin: auto;
+  padding-top: 2rem;
+  opacity: 0.9;
+}
+
+header menu h1 {
+  color: #ff9900;
+  text-align: center;
+}
+
+.dadosLocais {
+  margin: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1.7;
+}
+
+.dadosLocais > h1, h3 {
+  margin-bottom: 0.5rem;
+}
+
+.quente {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.frio {
+  color: #0000ff;
+  font-weight: 600;
+}
+
+form.pesquisa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+form.pesquisa input {
+  padding: 0.5rem;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  opacity: 0.9;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+div .dadosSemana {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgTempo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.dadosTempo {
+  margin-left: 0.5rem;
+}
+
+.dadosVento {
+  font-weight: 600;
+}
+
+.temperatura {
+  font-weight: 500;
+  font-size: 1.2rem;
+  
+}
+
+.tempMax {
+  color: #ff0000;
+}
+
+.tempMin {
+  color: #0000ff;
+}
+
+a {
+  color: #000;
+}
+
+@media(max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  .dadosLocais {
+    margin: 2rem 0;
+  }
+  form.pesquisa {
+    padding-top: 0.6rem;
+  }
+  .imgTempo {
+    display: none;
+  }
+}
+
+@media(max-width:340px) {
+  header {
+    min-height: 280px;
+  }
+  main {
+    font-size: 0.9rem;
+    min-width: 280px;
+  }
+  .temperatura {
+    font-size: 0.9rem;
+  }
+}
